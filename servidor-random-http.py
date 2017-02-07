@@ -29,7 +29,7 @@ while True:
     (recvSocket, address) = mySocket.accept()
     print(recvSocket.recv(1024))
 
-    # Generamos un numero aleatorio de 1 a 1000000000.
+    # Generamos un número aleatorio de 1 a 1000000000.
     aleatorio = random.randrange(1000000000)
 
     recvSocket.send(bytes("HTTP/1.1 200 OK\r\n\r\n" +
